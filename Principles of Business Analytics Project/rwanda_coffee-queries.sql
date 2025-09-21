@@ -3,7 +3,7 @@ SELECT farmer_id, COUNT(*)
 FROM harvests 
 GROUP BY farmer_id;
 
--- Query2: Average Quality Score per District
+-- Query 2: Average Quality Score per District
 
 SELECT f.district, AVG(h.quality_score) 
 FROM farmers f 
