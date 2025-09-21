@@ -1,1 +1,1 @@
-# BA_projects
+# MSBA_projects
