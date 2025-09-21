@@ -38,6 +38,7 @@ CREATE TABLE Sales (
     sale_date DATE NOT NULL,
     price_per_kg NUMERIC (10,2) CHECK (price_per_kg > 0),
     total_amount NUMERIC (10,2) CHECK (total_amount >= 0),
+    invoice_no VARCHAR(50) UNIQUE NOT NULL,
     PRIMARY KEY (sale_id)
     FOREIGN KEY (harvest_id) REFERENCES Harvests(harvest_id)
         ON UPDATE CASCADE
