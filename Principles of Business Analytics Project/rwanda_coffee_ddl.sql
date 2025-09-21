@@ -2,7 +2,7 @@
 CREATE SCHEMA rwanda_coffee;
 
 -- Farmers table captures information of cooperative members
-CREATE TABLE Farmers (
+CREATE TABLE farmers (
     farmer_id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     district VARCHAR(50) NOT NULL,
