@@ -34,8 +34,8 @@ CREATE TABLE Sales (
     harvest_id INT NOT NULL,
     buyer_id INT NOT NULL,
     sale_date DATE NOT NULL,
-    price_per_kg NUMERIC CHECK (price_per_kg > 0),
-    total_amount NUMERIC CHECK (total_amount >= 0),
+    price_per_kg NUMERIC (10,2) CHECK (price_per_kg > 0),
+    total_amount NUMERIC (10,2) CHECK (total_amount >= 0),
     PRIMARY KEY (sale_id)
     FOREIGN KEY (harvest_id) REFERENCES Harvests(harvest_id)
         ON UPDATE CASCADE
