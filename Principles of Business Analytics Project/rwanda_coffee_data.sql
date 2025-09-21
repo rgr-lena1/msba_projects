@@ -2,7 +2,7 @@
 INSERT INTO Farmers (farmer_id, name, district, cooperative_join_date) VALUES
 (1, 'Jean Claude', 'Huye', '2019-03-15'),
 (2, 'Alice Mukamana', 'Kayonza', '2020-06-20'),
-(3, 'Eric Nkurunziza', 'Gakenke', '2018-11-10'),
+(3, 'Elie Nkurunziza', 'Gakenke', '2018-11-10'),
 (4, 'Marie Uwitonze', 'Nyamasheke', '2021-02-05'),
 (5, 'Patrick Habimana', 'Karongi', '2019-12-30'),
 (6, 'Jeanne Uwamahoro', 'Ruhango', '2022-01-15'),
