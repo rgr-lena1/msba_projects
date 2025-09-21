@@ -36,8 +36,9 @@ CREATE TABLE Sales (
     harvest_id INT NOT NULL,
     buyer_id INT NOT NULL,
     sale_date DATE NOT NULL,
+    quantity_sold_kg NUMERIC (10,2) CHECK (quantiy_sold_kg > 0),
     price_per_kg NUMERIC (10,2) CHECK (price_per_kg > 0),
-    total_amount NUMERIC (10,2) CHECK (total_amount >= 0),
+    total_amount NUMERIC (12,2) CHECK (total_amount >= 0) GENERATED ALWAYS AS (quantity_sold_kg * price_per_kg) STORED,
     invoice_no VARCHAR(50) UNIQUE NOT NULL,
     PRIMARY KEY (sale_id)
     FOREIGN KEY (harvest_id) REFERENCES Harvests(harvest_id)
