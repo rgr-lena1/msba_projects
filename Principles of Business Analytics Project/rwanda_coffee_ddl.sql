@@ -23,6 +23,7 @@ CREATE TABLE Harvests (
     farmer_id INT NOT NULL,
     harvest_date DATE NOT NULL,
     quantity_kg NUMERIC (10,2) CHECK (quantity_kg > 0),
+    quality_score INT CHECK (quality_score BETWEEN 0 AND 100),
     batch_code VARCHAR(50) UNIQUE NOT NULL,
     PRIMARY KEY  (harvest_id),
     FOREIGN KEY (farmer_id) REFERENCES Farmers(farmer_id)
