@@ -5,7 +5,7 @@ CREATE SCHEMA rwanda_coffee;
 CREATE TABLE Farmers (
     name VARCHAR(100) NOT NULL,
     district VARCHAR(50) NOT NULL,
-    cooperative_join_date DATE
+    cooperative_join_date DATE NOT NULL,
     PRIMARY KEY (farmer_id)
 );
 
@@ -13,7 +13,8 @@ CREATE TABLE Farmers (
 CREATE TABLE Buyers (
     name VARCHAR(100) NOT NULL,
     country VARCHAR(50),
-    contract_start_date DATE
+    contract_start_date DATE NOT NULL,
+    contract_start_date DATE NOT NULL,
     PRIMARY KEY (buyer_id)
 );
 
