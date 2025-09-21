@@ -9,7 +9,7 @@ INSERT INTO Farmers (farmer_id, name, district, cooperative_join_date) VALUES
 (7, 'Emma Kayitesi', 'Rutsiro', '2020-07-22'),
 (8, 'Claudine Iradukunda', 'Rusizi', '2021-09-10'),
 (9, 'Fabrice Munyaneza', 'Nyamagabe', '2018-05-25'),
-(10, ‘Claire Mukarwego', 'Kayonza', '2022-03-12');
+(10, 'Claire Mukarwego', 'Nyamagabe', '2018-05-25');
 
 -- Buyers
 INSERT INTO Buyers (buyer_id, name, country, contract_start_date, contract_end_date) VALUES
@@ -21,7 +21,7 @@ INSERT INTO Buyers (buyer_id, name, country, contract_start_date, contract_end_d
 (6, 'New York Coffee Importers', 'USA', '2025-02-01', '2028-01-31'),
 (7, 'Kigali Coffee Exporters', 'Rwanda', '2025-06-01', '2027-05-31');
 
-  -- Harvests
+-- Harvests
 INSERT INTO Harvests (harvest_id, farmer_id, harvest_date, quantity_kg, quality_score, batch_code) VALUES
 (1, 1, '2025-03-15', 125.0, 85, 'BATCH001'),
 (2, 2, '2025-03-20', 130.0, 88, 'BATCH002'),
@@ -34,7 +34,7 @@ INSERT INTO Harvests (harvest_id, farmer_id, harvest_date, quantity_kg, quality_
 (9, 9, '2025-04-18', 132.0, 83, 'BATCH009'),
 (10, 10, '2025-04-20', 140.0, 87, 'BATCH010');
 
-  -- Sales
+-- Sales
 INSERT INTO Sales (sale_id, harvest_id, buyer_id, sale_date, quantity_sold_kg, price_per_kg, invoice_no) VALUES
 (1, 1, 7, '2025-03-20', 50.0, 5.5, 'INV001'),
 (2, 1, 1, '2025-03-25', 75.0, 5.6, 'INV002'),
