@@ -80,3 +80,12 @@ FROM buyers
 WHERE contract_end_date <= CURRENT_DATE + INTERVAL '3 months'
 ORDER BY contract_end_date;
 
+-- Query 10: Total sale revenue per buyer
+SELECT b.name AS buyer_name, b.country,
+       SUM(s.quantity_sold_kg * s.sale_price_per_kg) AS total_revenue
+FROM buyers b
+JOIN sales s ON b.buyer_id = s.buyer_id
+GROUP BY b.name, b.country
+ORDER BY total_revenue DESC;
+
+
