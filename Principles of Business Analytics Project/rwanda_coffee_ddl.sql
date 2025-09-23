@@ -1,5 +1,4 @@
--- Create the database schema and tables 
-CREATE SCHEMA rwanda_coffee;
+-- Rwanda Coffee Database for Farmers,Harvests,Buyers and Sales
 
 -- Farmers table captures information of cooperative members
 CREATE TABLE farmers (
