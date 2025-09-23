@@ -1,4 +1,4 @@
--- Rwanda Coffee Database for Farmers,Harvests,Buyers and Sales
+-- Rwanda Coffee Database Tables for Farmers,Harvests,Buyers and Sales
 
 -- Farmers table captures information of cooperative members
 CREATE TABLE farmers (
