@@ -89,4 +89,3 @@ INSERT INTO sales (sale_id, harvest_id, buyer_id, sale_date, quantity_sold_kg, s
 (9, 9, 2, '2025-04-28', 110.00, 5.70),
 (10, 10, 3, '2025-05-02', 120.00, 6.10);
 
-
