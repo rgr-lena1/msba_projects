@@ -1,4 +1,4 @@
--- Rwanda Coffee Database (Tables& Data for Farmers,Harvests,Buyers and Sales)
+-- Rwanda Coffee Database (Tables& Data for Farmers,Harvests,Buyers and Sales) + QUERIES
 
 -- Farmers table captures information of cooperative members
 CREATE TABLE farmers (
@@ -88,4 +88,7 @@ INSERT INTO sales (sale_id, harvest_id, buyer_id, sale_date, quantity_sold_kg, s
 (8, 8, 1, '2025-04-25', 100.00, 5.55),
 (9, 9, 2, '2025-04-28', 110.00, 5.70),
 (10, 10, 3, '2025-05-02', 120.00, 6.10);
+
+
+
 
