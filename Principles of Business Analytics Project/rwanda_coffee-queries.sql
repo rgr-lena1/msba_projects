@@ -8,7 +8,7 @@ GROUP BY f.district
 ORDER BY avg_quality DESC;
 
 
--- Query 2: Revenue per farmer
+-- Query 2: Farmers with highest revenue
 
 SELECT f.name AS farmer_name, f.district,
        SUM(s.quantity_sold_kg * s.sale_price_per_kg) AS total_revenue
@@ -92,7 +92,7 @@ GROUP BY b.name, b.country
 ORDER BY total_revenue DESC;
 
 
--- Query 10:List all farmers and their harvests
+-- Query 10:List of all farmers and their harvests
 
 SELECT f.farmer_id, f.name AS farmer_name, f.district,
        h.harvest_id, h.harvest_date, h.quantity_kg
